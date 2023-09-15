@@ -1,0 +1,88 @@
+hr{
+    margin: 0;
+}
+
+.rodape{
+    background-color: var(--branco);
+    border-top: 1px solid var(--preto-texto);  
+}
+
+.rodape__titulo{
+    padding: 2rem;
+}
+
+.rodape__titulo__link{
+    text-decoration: none;
+    color: var(--preto-texto);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.rodape__educacao{
+    display: none;
+}
+
+.rodape__educacao__online{
+    display: none;
+}
+
+.rodape__comunidade{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+
+    .rodape{
+        padding: 3rem;
+        background-color: var(--branco);
+        border-top: 1px solid var(--preto-texto);  
+        display: flex;
+        gap: 4rem;
+    }
+
+    .rodape__titulo, .educacao__titulo, .comunidade__titulo {
+       padding: 0;
+       color: var(--cinza-titulo-rodape);
+       font-size: 1rem;
+    }
+
+    .rodape__educacao, .rodape__educacao__online, .rodape__comunidade{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;;
+
+    }
+
+    .educacao__item, .educacao__online__item, .comunidade__item{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .link-rodade {
+        color: var(--cinza-link-rodape);
+        font-size: 1rem;
+    }
+    
+
+}
+
+@media screen and (min-width: 1728px){
+
+    .rodape{
+        padding: 3rem;
+        background-color: var(--branco);
+        border-top: 1px solid var(--preto-texto);  
+        display: flex;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    .rodape__educacao, .rodape__educacao__online, .rodape__comunidade{
+        border-left: 1px solid var(--preto-texto);
+        padding-left: 1rem;
+
+    }
+
+}
+
